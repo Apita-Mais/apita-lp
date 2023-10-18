@@ -3,5 +3,5 @@ import { ComponentProps } from "react";
 type ContainerProps = ComponentProps<"main">;
 
 export function Container(props: ContainerProps) {
-  return <main className="max-w-5xl w-full mx-auto px-4" {...props} />;
+  return <main className="mx-auto w-full max-w-5xl px-10" {...props} />;
 }

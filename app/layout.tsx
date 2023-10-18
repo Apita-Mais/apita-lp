@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
-import { Inter, Sora } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "@/styles/globals.css";
 
-import { Blur } from "@/components/Blur";
 import { Header } from "@/components/Header";
+import clsx from "clsx";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-default" });
-
-const sora = Sora({ subsets: ["latin"], variable: "--font-title" });
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800"],
+  variable: "--font-default",
+});
 
 export const metadata: Metadata = {
   title: "apita+",
@@ -22,13 +24,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${sora.variable} font-inter bg-background outline-none`}
+        className={clsx(
+          "bg-background font-inter outline-none",
+          poppins.variable,
+        )}
       >
         <Header />
-
         {children}
-
-        <Blur />
       </body>
     </html>
   );

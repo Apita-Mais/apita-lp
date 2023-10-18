@@ -1,29 +1,31 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
+
 import logo from "@/assets/logo.svg";
 
 import { motion } from "framer-motion";
-import { useState } from "react";
-import { usePathname } from "next/navigation";
 import { navLinks } from "@/data/header";
-import Link from "next/link";
 
 export function Header() {
   const [hovered, setHovered] = useState("");
-  const pathname = usePathname();
 
   return (
-    <header className="relative h-20 w-full">
-      <nav className="flex justify-between items-center max-w-5xl w-full mx-auto h-full px-4">
-        <Image src={logo} alt="Logo" width={120} />
+    <header className="sticky top-0 h-20 w-full">
+      <nav className="mx-auto flex h-full w-full max-w-5xl items-center justify-between px-10">
+        <Image src={logo} alt="Logo" width={80} />
         <ul className="flex items-center text-foreground">
           {navLinks.map(({ id, href, name }) => {
             const isHovered = hovered === href;
 
             return (
               <li key={id}>
-                <Link href={href} className="font-medium text-foreground">
+                <Link
+                  href={href}
+                  className="text-sm font-medium text-foreground/80 duration-150 hover:text-foreground"
+                >
                   <motion.span
                     onHoverStart={() => setHovered(href)}
                     onHoverEnd={() => setHovered("")}
@@ -31,7 +33,7 @@ export function Header() {
                   >
                     {isHovered && (
                       <motion.span
-                        className="absolute rounded-lg bg-foreground/20 inset-0 z-[-1]"
+                        className="absolute inset-0 z-[-1] rounded-lg bg-primary/20"
                         layoutId="nav"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}

@@ -5,12 +5,12 @@ const button = tv({
   variants: {
     variant: {
       default:
-        "font-title font-semibold border-2 border-transparent text-foreground bg-primary rounded-xl hover:opacity-80 duration-300",
+        "font-semibold text-sm text-foreground bg-primary rounded-full hover:opacity-80 duration-300",
       outline:
-        "font-title font-semibold border-2 border-primary text-primary rounded-xl hover:bg-primary hover:text-white duration-300",
+        "font-semibold text-sm text-foreground/80 rounded-full hover:bg-primary/30 hover:text-white duration-300",
     },
     size: {
-      default: "px-4 py-2",
+      default: "px-6 py-4",
       md: "p-2",
     },
   },

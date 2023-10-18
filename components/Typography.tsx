@@ -4,15 +4,13 @@ import { tv, VariantProps } from "tailwind-variants";
 const typography = tv({
   variants: {
     variant: {
-      default: "text-foreground font-medium",
-      bold: "text-foreground font-bold font-title",
+      default: "text-foreground/80 font-medium",
     },
     size: {
       default: "text-sm",
       md: "text-md",
       lg: "text-lg",
       xl: "text-xl",
-      xxxl: "text-4xl",
     },
   },
   defaultVariants: {
