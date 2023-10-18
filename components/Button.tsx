@@ -7,7 +7,7 @@ const button = tv({
       default:
         "font-semibold text-sm text-foreground bg-primary rounded-full hover:opacity-80 duration-300",
       outline:
-        "font-semibold text-sm text-foreground/80 rounded-full hover:bg-primary/30 hover:text-white duration-300",
+        "font-semibold text-sm bg-primary/10 text-foreground/80 rounded-full hover:bg-primary/30 hover:text-white duration-300",
     },
     size: {
       default: "px-6 py-4",
