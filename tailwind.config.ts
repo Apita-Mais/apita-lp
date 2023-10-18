@@ -14,12 +14,6 @@ const config: Config = {
         foreground: "rgb(255 218 252)",
       },
     },
-    screens: {
-      sm: "100px",
-      md: "768px",
-      lg: "1024px",
-      xl: "1280px",
-    },
     fontFamily: {
       inter: "var(--font-default)",
     },
