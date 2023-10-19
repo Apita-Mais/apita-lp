@@ -22,10 +22,7 @@ export function Hero() {
             <Rocket />
             Plataforma
           </Button>
-          <Button variant="outline" className="flex items-center gap-1">
-            História
-            <ChevronRight size={16} />
-          </Button>
+          <Button variant="outline">História</Button>
         </div>
       </div>
     </section>
