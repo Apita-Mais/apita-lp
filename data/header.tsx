@@ -11,7 +11,7 @@ export const navLinks = [
     },
     {
         id: 3,
-        href: "#history",
-        name: "História"
+        href: "/team",
+        name: "Equipe"
     },
 ]

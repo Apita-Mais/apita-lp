@@ -18,10 +18,12 @@ export function Hero() {
           direção à igualdade e excelência esportiva.
         </Typography>
         <div className="flex flex-wrap items-center justify-center gap-4">
-          <Button className="flex items-center gap-2">
-            <Rocket />
-            Plataforma
-          </Button>
+          <a href="https://apitamais.com.br" target="_blank">
+            <Button className="flex items-center gap-2">
+              <Rocket />
+              Plataforma
+            </Button>
+          </a>
           <Button variant="outline">História</Button>
         </div>
       </div>
