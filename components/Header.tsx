@@ -2,20 +2,33 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import logo from "@/assets/logo.svg";
 
 import { motion } from "framer-motion";
 import { navLinks } from "@/data/header";
+import { cn } from "@/lib/utils";
 
 export function Header() {
   const [hovered, setHovered] = useState("");
+  const [isScrolled, setIsScrolled] = useState(false)
+
+  useEffect(() => {
+    window.onscroll = () => {
+      window.scrollY > 20 ? setIsScrolled(true): setIsScrolled(false)
+    }
+  }, [])
 
   return (
-    <header className="sticky top-0 h-20 w-full">
+    <header className={cn("border-b sticky top-0 h-20 w-full z-[999]", {
+      "bg-background/30 backdrop-blur-lg border-primary/10": isScrolled,
+      "bg-transparent border-transparent": !isScrolled
+    })}>
       <nav className="mx-auto flex h-full w-full max-w-5xl items-center justify-between px-10">
-        <Image src={logo} alt="Logo" width={80} />
+        <Link href="/">
+          <Image src={logo} alt="Logo" width={80} />
+        </Link>
         <ul className="flex items-center text-foreground">
           {navLinks.map(({ id, href, name }) => {
             const isHovered = hovered === href;

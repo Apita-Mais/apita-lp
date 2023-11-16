@@ -11,6 +11,14 @@
     @apply bg-primary/5 text-primary;
   }
 
+  ::-webkit-scrollbar {
+    @apply w-1;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-2xl bg-primary/40;
+  }
+
   header,
   button {
     @apply select-none;

@@ -8,7 +8,8 @@ const title = tv({
     },
     size: {
       default: "text-2xl sm:text-5xl",
-      lg: "text-lg"
+      lg: "text-lg",
+      xl: "text-xl"
     },
   },
   defaultVariants: {

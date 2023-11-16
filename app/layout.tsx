@@ -4,6 +4,7 @@ import "@/styles/globals.css";
 
 import { Header } from "@/components/Header";
 import clsx from "clsx";
+import { Footer } from "@/components/Footer";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -25,12 +26,13 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={clsx(
-          "bg-background font-inter outline-none",
+          "bg-background font-inter outline-none overflow-x-hidden",
           poppins.variable,
         )}
       >
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
