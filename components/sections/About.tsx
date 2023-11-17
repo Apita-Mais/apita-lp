@@ -11,7 +11,7 @@ export function About() {
     <section className="space-y-6 pb-40" id="about">
       <div className="space-y-2 text-center">
         <Title size="xxxl">
-          Te aproximando cada vez <br /> mais do <span>futebol</span>.
+          Te aproximando cada vez <br /> mais do <span>futebol</span>
         </Title>
         <Typography>
           Onde talento encontra oportunidade: nossa plataforma, nosso orgulho.
@@ -35,21 +35,21 @@ export function About() {
             A trajetória do futebol feminino no Brasil é uma que demanda coragem
             e resiliência. Por anos, atletas talentosas desafiaram adversidades,
             batalhando não apenas contra suas oponentes no campo, mas também
-            contra o preconceito e a falta de visibilidade. No entanto, o nosso{" "}
+            contra o preconceito e a falta de visibilidade. No entanto, a nossa{" "}
             <Link
               href="/team"
               className="font-semibold text-primary duration-300 hover:text-primary/80"
             >
-              time
+              equipe
             </Link>{" "}
             está transformando essa narrativa de subestimação em uma história de
             triunfo e empoderamento.
           </Typography>
           <Typography size="md" className="leading-relaxed">
             A nossa missão é ampliar as vozes das jogadoras, treinadoras,
-            árbitras e torcedoras do futebol feminino. Essa plataforma oferece
-            um espaço onde você ficará por dentro de todas as partidas e
-            notícias. A revolução do futebol feminino começa agora, na nossa{" "}
+            árbitras e torcedoras do futebol feminino. Nós oferecemos um espaço
+            onde você ficará por dentro de todas as partidas e notícias. A
+            revolução do futebol feminino começa agora, na nossa{" "}
             <a
               href="https://apitamais.com.br"
               target="_blank"
