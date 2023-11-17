@@ -14,6 +14,22 @@ const config: Config = {
         secondary: "rgb(51, 0, 46)",
         foreground: "rgb(255 218 252)",
       },
+      animation: {
+        flip: "flip 6s infinite steps(2, end)",
+        rotate: "rotate 3s linear infinite both",
+      },
+      keyframes: {
+        flip: {
+          to: {
+            transform: "rotate(360deg)",
+          },
+        },
+        rotate: {
+          to: {
+            transform: "rotate(90deg)",
+          },
+        },
+      },
     },
     fontFamily: {
       inter: "var(--font-default)",

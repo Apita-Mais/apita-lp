@@ -1,12 +1,12 @@
-import { Container } from "@/components/Container";
+import { AnimateEnter } from "@/components/utils/AnimateEnter";
 import { Hero } from "@/components/sections/Hero";
 import { About } from "@/components/sections/About";
 
 export default function Home() {
   return (
-    <Container>
+    <AnimateEnter className="mx-auto w-full max-w-5xl px-10">
       <Hero />
       <About />
-    </Container>
+    </AnimateEnter>
   );
 }

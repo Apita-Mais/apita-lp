@@ -1,8 +1,9 @@
-import { Rocket, ChevronRight } from "lucide-react";
+import { Rocket } from "lucide-react";
 
-import { Button } from "../Button";
-import { Title } from "../Title";
-import { Typography } from "../Typography";
+import { Button } from "../utils/Button";
+import { Title } from "../utils/Title";
+import { Typography } from "../utils/Typography";
+import { PlatformButton } from "../ui/PlatformButton";
 
 export function Hero() {
   return (
@@ -13,18 +14,15 @@ export function Hero() {
           <br className="max-md:hidden" /> para um novo{" "}
           <span className="text-primary">patamar</span>.
         </Title>
-        <Typography size="md" className="mx-auto w-full max-w-2xl">
+        <Typography size="md" className="mx-auto w-full max-w-2xl leading-relaxed">
           Celebrando a força do futebol feminino, onde cada jogada é um passo em
           direção à igualdade e excelência esportiva.
         </Typography>
         <div className="flex flex-wrap items-center justify-center gap-4">
-          <a href="https://apitamais.com.br" target="_blank">
-            <Button className="flex items-center gap-2">
-              <Rocket />
-              Plataforma
-            </Button>
+          <PlatformButton />
+          <a href="#about">
+            <Button variant="outline">Sobre</Button>
           </a>
-          <Button variant="outline">História</Button>
         </div>
       </div>
     </section>

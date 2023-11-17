@@ -7,9 +7,11 @@ const title = tv({
       default: "text-foreground font-bold",
     },
     size: {
-      default: "text-2xl sm:text-5xl",
+      default: "text-3xl sm:text-5xl",
       lg: "text-lg",
-      xl: "text-xl"
+      xl: "text-xl",
+      xxl: "text-2xl",
+      xxxl: "text-3xl",
     },
   },
   defaultVariants: {

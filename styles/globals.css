@@ -8,7 +8,7 @@
   }
 
   ::selection {
-    @apply bg-primary/5 text-primary;
+    @apply bg-primary/5 text-primary/80;
   }
 
   ::-webkit-scrollbar {
