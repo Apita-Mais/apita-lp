@@ -38,7 +38,7 @@ export function About() {
             contra o preconceito e a falta de visibilidade. No entanto, a nossa{" "}
             <Link
               href="/team"
-              className="font-semibold text-primary duration-300 hover:text-primary/80"
+              className="font-semibold text-primary duration-300 hover:text-primary/90"
             >
               equipe
             </Link>{" "}
@@ -53,7 +53,7 @@ export function About() {
             <a
               href="https://apitamais.com.br"
               target="_blank"
-              className="font-semibold text-primary duration-300 hover:text-primary/80"
+              className="font-semibold text-primary duration-300 hover:text-primary/90"
             >
               plataforma
             </a>
