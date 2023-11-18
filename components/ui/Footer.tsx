@@ -7,7 +7,6 @@ import logo from "@/assets/logo.svg";
 
 import { Typography } from "../utils/Typography";
 import { Title } from "../utils/Title";
-import { Divider } from "./Divider";
 
 export function Footer() {
   return (
