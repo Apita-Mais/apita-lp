@@ -1,5 +1,3 @@
-import { Rocket } from "lucide-react";
-
 import { Button } from "../utils/Button";
 import { Title } from "../utils/Title";
 import { Typography } from "../utils/Typography";
@@ -14,7 +12,10 @@ export function Hero() {
           <br className="max-md:hidden" /> para um novo{" "}
           <span className="text-primary">patamar</span>.
         </Title>
-        <Typography size="md" className="mx-auto w-full max-w-2xl leading-relaxed">
+        <Typography
+          size="md"
+          className="mx-auto w-full max-w-2xl leading-relaxed"
+        >
           Celebrando a força do futebol feminino, onde cada jogada é um passo em
           direção à igualdade e excelência esportiva.
         </Typography>
