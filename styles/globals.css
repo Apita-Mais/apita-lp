@@ -24,3 +24,7 @@
     @apply select-none;
   }
 }
+
+body {
+  -webkit-tap-highlight-color: transparent;
+}
