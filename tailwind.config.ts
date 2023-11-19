@@ -32,7 +32,7 @@ const config: Config = {
       },
     },
     fontFamily: {
-      inter: "var(--font-default)",
+      poppins: "var(--font-default)",
     },
   },
   plugins: [],

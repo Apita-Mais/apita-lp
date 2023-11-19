@@ -79,7 +79,7 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body
         className={cn(
-          "overflow-x-hidden bg-background font-inter outline-none",
+          "font-poppins overflow-x-hidden bg-background outline-none",
           poppins.variable,
         )}
       >
